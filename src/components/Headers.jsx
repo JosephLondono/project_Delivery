@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaSearch } from 'react-icons/fa'
+import { FaPlay } from "react-icons/fa";
+import Cabecera from '../assets/imagen_delivery.jpg'
 
 const Headers = () => {
   return (
@@ -23,7 +25,22 @@ const Headers = () => {
                         <FaSearch size={15} className='cursor-pointer text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
                     </div>
                 </div>
+                <div className='flex gap-8 items-center'>
+                    <button className='bg-green-500 active:scale-90 transition duration-500 transform hover:shadow-lg shadow-md rounded-full px-8 py-2 text-xl font-medium text-white'>
+                        Ver mas!
+                    </button>
+                    <div className='sm:flex gap-4 items-center hidden'>
+                        <div className=''>
+                            <div className='w-14 h-14 shadow-md cursor-pointer relative bg-white rounded-full'>
+                                <FaPlay size={18} className='cursor-pointer text-red-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
+                            </div>
+                            Ver Ahora
+                        </div>
+                    
+                    </div>
+                </div>
             </div>
+            <img src={Cabecera} className='h-[38rem] mx-auto justify-end rounded-lg shadow-lg border-4 border-blue-700 object-cover transition duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl' alt='' />
         </div>
         </div>
     </div>
